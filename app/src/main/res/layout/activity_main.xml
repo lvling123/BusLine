@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_city"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="city"/>
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_toRightOf="@+id/tv_city"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="city"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_line"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="line"/>
+
+        <EditText
+            android:id="@+id/et_line"
+            android:layout_toRightOf="@+id/tv_line"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="line"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"/>
+
+
+</LinearLayout>

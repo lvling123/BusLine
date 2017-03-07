@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_back1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/img_icon_left"/>
+
+    <View
+        android:layout_below="@+id/iv_back1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/error"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_below="@+id/iv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="很抱歉，未找到结果，你可以换个试试"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

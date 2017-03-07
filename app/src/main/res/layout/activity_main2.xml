@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:paddingLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/img_icon_left"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="xxx路详情"
+            android:textSize="25dp"
+            android:paddingLeft="50dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff0033"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_recyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/recyle"/>
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxx--xxxx"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首：hh:MM 末：hh:MM 全程：XX公里"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_show"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
